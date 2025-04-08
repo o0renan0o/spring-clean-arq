@@ -6,6 +6,10 @@ Java Version: 17
 
 Spring Boot Version: 3.0.4
 
+This project serves as a guide for developers aiming to build scalable, maintainable, and efficient applications using modern architectural principles. It is not a fully functional application by itself but rather a framework and reference model that can be tailored and extended for real-world projects. It is meant to help developers understand and implement best practices such as clean architecture, modular design, reactive programming, and asynchronous processing.
+
+By following this guide, developers can build robust applications that are flexible, easy to maintain, and ready for future scalability, with integration of advanced features such as circuit breakers and reactive components.
+
 ---
 ### To build a Docker image for this application.
 
