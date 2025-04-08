@@ -8,7 +8,7 @@
     <packaging>jar</packaging>
 
     <parent>
-        <groupId>br.com.bradesco</groupId>
+        <groupId>br.com.teach</groupId>
         <artifactId>bff</artifactId>
         <version>${revision}</version>
     </parent>
@@ -21,7 +21,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>br.com.bradesco</groupId>
+            <groupId>br.com.teach</groupId>
             <artifactId>core</artifactId>
             <version>${revision}</version>
         </dependency>

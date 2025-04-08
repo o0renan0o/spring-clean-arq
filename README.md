@@ -10,7 +10,7 @@ Spring Boot Version: 3.0.4
 ### To build a Docker image for this application.
 
 ```
-docker build -t bff-chave .
+docker build -t bff-teach .
 ```
 
 ### To run the required Redis Docker container.
@@ -22,7 +22,7 @@ docker run -d -p 6379:6379 redis
 ### To run the project.
 
 ```
-docker run -p 8081:8081 bff-chave
+docker run -p 8081:8081 bff-teach
 ```
 
 ### To build the project and run the application.
@@ -33,7 +33,7 @@ mvn clean package
 
 ```
 cd .\target\
-java -jar .\bff-chave.jar
+java -jar .\bff-teach.jar
 ```
 
 ### To access the application’s Swagger UI.

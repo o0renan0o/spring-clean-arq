@@ -1,0 +1,48 @@
+resilience4j:
+  retry:
+    instances:
+      POST_SRV_ALTERA_APELIDO:
+        max-attempts: 3
+        wait-duration: 5s
+        enable-exponential-backoff: true
+        exponential-backoff-multiplier: 2
+      POST_SRV_ALTERA_CHAVE_APELIDO:
+        max-attempts: 3
+        wait-duration: 5s
+        enable-exponential-backoff: true
+        exponential-backoff-multiplier: 2
+      POST_SRV_CONSULTA_CHAVE:
+        max-attempts: 3
+        wait-duration: 5s
+        enable-exponential-backoff: true
+        exponential-backoff-multiplier: 2
+      POST_SRV_CONSULTA_CHAVES_MULTIPLAS:
+        max-attempts: 3
+        wait-duration: 5s
+        enable-exponential-backoff: true
+        exponential-backoff-multiplier: 2
+      POST_SRV_CONSULTA_CHAVE_EFETIVACAO:
+        max-attempts: 3
+        wait-duration: 5s
+        enable-exponential-backoff: true
+        exponential-backoff-multiplier: 2
+      POST_SRV_CONSULTA_CHAVE_INTENCAO:
+        max-attempts: 3
+        wait-duration: 5s
+        enable-exponential-backoff: true
+        exponential-backoff-multiplier: 2
+      POST_SRV_EXCLUI_CHAVE:
+        max-attempts: 3
+        wait-duration: 5s
+        enable-exponential-backoff: true
+        exponential-backoff-multiplier: 2
+      POST_SRV_EXCLUI_CHAVE_PRECADASTRO:
+        max-attempts: 3
+        wait-duration: 5s
+        enable-exponential-backoff: true
+        exponential-backoff-multiplier: 2
+      POST_SRV_LISTA_CHAVES:
+        max-attempts: 3
+        wait-duration: 5s
+        enable-exponential-backoff: true
+        exponential-backoff-multiplier: 2

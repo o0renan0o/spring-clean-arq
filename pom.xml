@@ -3,11 +3,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>br.com.bradesco</groupId>
+    <groupId>br.com.teach</groupId>
     <artifactId>bff</artifactId>
     <version>${revision}</version>
-    <name>bspi-bff-chave</name>
-    <description>bspi-bff-chave</description>
+    <name>bspi-bff-teach</name>
+    <description>This project was designed and developed following Clean Architecture principles, Spring multi-modules, Reactive Manifesto, Circuit Breakers, and asynchronous processing.
+    </description>
     <packaging>pom</packaging>
 
     <modules>
@@ -19,17 +20,17 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>br.com.bradesco</groupId>
+                <groupId>br.com.teach</groupId>
                 <artifactId>core</artifactId>
-                <version>${project.version}</version>
+                <version>1.0.0</version>
             </dependency>
             <dependency>
-                <groupId>br.com.bradesco</groupId>
+                <groupId>br.com.teach</groupId>
                 <artifactId>infrastructure</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>br.com.bradesco</groupId>
+                <groupId>br.com.teach</groupId>
                 <artifactId>app</artifactId>
                 <version>${project.version}</version>
             </dependency>
@@ -115,7 +116,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>br.com.bradesco.app.ChaveApplication</mainClass>
+                            <mainClass>br.com.app.TeachApplication</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>

@@ -8,7 +8,7 @@
     <packaging>jar</packaging>
 
     <parent>
-        <groupId>br.com.bradesco</groupId>
+        <groupId>br.com.teach</groupId>
         <artifactId>bff</artifactId>
         <version>${revision}</version>
     </parent>
@@ -21,12 +21,12 @@
 
     <dependencies>
         <dependency>
-            <groupId>br.com.bradesco</groupId>
+            <groupId>br.com.teach</groupId>
             <artifactId>core</artifactId>
             <version>${revision}</version>
         </dependency>
         <dependency>
-            <groupId>br.com.bradesco</groupId>
+            <groupId>br.com.teach</groupId>
             <artifactId>infrastructure</artifactId>
             <version>${revision}</version>
         </dependency>
@@ -100,7 +100,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring-boot.version}</version>
                 <configuration>
-                    <finalName>bff-chave</finalName>
+                    <finalName>bff-teach</finalName>
                     <outputDirectory>${project.parent.basedir}/target</outputDirectory>
                 </configuration>
                 <executions>
