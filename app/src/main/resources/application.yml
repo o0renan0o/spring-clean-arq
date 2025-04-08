@@ -1,0 +1,40 @@
+spring:
+#  LEAP
+#  config:
+#    import: "optional:configtree:/mnt/secrets/"
+#  host: ${kv.redis_url}localhost
+  cache:
+    type: redis
+  data:
+    redis:
+      port: 6379
+      host: localhost
+  profiles:
+    include:
+      - presenter
+      - core
+      - infrastructure
+  jackson:
+    time-zone: America/Sao_Paulo
+
+server:
+  shutdown: graceful
+  port : 8081
+
+logging:
+  level:
+    org: INFO
+
+management:
+  endpoint:
+    health:
+      probes:
+        enabled: true
+      show-details: always
+      group:
+        custom:
+          include: diskSpace,ping
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
